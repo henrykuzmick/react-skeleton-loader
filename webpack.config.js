@@ -6,7 +6,9 @@ const config = {
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'Skeleton.js'
+    filename: 'Skeleton.js',
+    library: 'Skeleton',
+    libraryTarget: 'umd'
   },
   externals: {
     react: {

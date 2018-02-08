@@ -3,3 +3,4 @@ src
 stories
 .storybook
 .eslint
+CHANGELOG.md
