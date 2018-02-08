@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "postbuild": "uglifyjs dist/Skeleton.js -c --output dist/Skeleton.min.js",
+    "prepublishOnly": "npm run build"
   },
   "author": "Henrikas Kuzmickas <henry.kuzmick@gmail.com>",
   "repository": {
@@ -26,12 +28,18 @@
     "dummy"
   ],
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/addon-links": "^3.3.12",
+    "@storybook/addons": "^3.3.12",
+    "@storybook/react": "^3.3.12",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.9",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-import-resolver-webpack": "^0.8.4",
@@ -44,13 +52,9 @@
     "flow-bin": "^0.65.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.10.0",
-    "css-loader": "^0.28.9",
     "style-loader": "^0.20.1",
-    "@storybook/react": "^3.3.12",
-    "@storybook/addon-actions": "^3.3.12",
-    "@storybook/addon-links": "^3.3.12",
-    "@storybook/addons": "^3.3.12"
+    "uglify-js": "^3.3.10",
+    "webpack": "^3.10.0"
   },
   "dependencies": {}
 }
