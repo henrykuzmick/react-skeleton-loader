@@ -1,6 +1,6 @@
 {
   "name": "react-skeleton-loader",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "dist/Skeleton.js",
   "scripts": {
