@@ -9,7 +9,12 @@ const config = {
     filename: 'Skeleton.js'
   },
   externals: {
-    react: 'react'
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'react',
+      root: '_'
+    }
   },
   module: {
     rules: [
