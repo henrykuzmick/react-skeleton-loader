@@ -2,7 +2,7 @@
   "name": "react-skeleton-loader",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/Skeleton.js",
   "scripts": {
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
