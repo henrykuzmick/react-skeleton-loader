@@ -37,7 +37,9 @@ const Skeleton = (props: Props) => {
         &zwnj;
       </span>
     );
-    elements.push(<br />);
+    if (i !== props.count - 1) {
+      elements.push(<br />);
+    }
   }
 
   return (
