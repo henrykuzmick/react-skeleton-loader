@@ -1,0 +1,16 @@
+{
+  "plugins": ["standard", "react", "flowtype"],
+  "extends": [
+    "standard", 
+    "plugin:react/recommended", 
+    "plugin:flowtype/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "react/prop-types": [0],
+    "react/display-name": [0],
+    "semi": ["error", "always"]
+  }
+}

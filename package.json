@@ -1,0 +1,56 @@
+{
+  "name": "react-skeleton-loader",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Henrikas Kuzmickas <henry.kuzmick@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrykuzmick/react-skeleton-loader.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.6.1 || ^16.0.0"
+  },
+  "keywords": [
+    "react",
+    "skeleton",
+    "loader",
+    "preload",
+    "animated",
+    "dummy"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-plugin-flowtype": "^2.41.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.65.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.1",
+    "@storybook/react": "^3.3.12",
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/addon-links": "^3.3.12",
+    "@storybook/addons": "^3.3.12"
+  },
+  "dependencies": {}
+}
