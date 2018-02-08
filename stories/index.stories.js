@@ -15,12 +15,26 @@ storiesOf('Button', module)
 
 storiesOf('Skeleton', module)
   .add('Text Block', () => (
-    <div>
-      <h1>
-        <Skeleton width="400px" />
-      </h1>
-      <p>
-        <Skeleton width="350px" count={5}/>
-      </p>
+    <div className="container">
+      <div className="row mt-5">
+        <div className="col-6">
+          <h1>
+            <Skeleton width="400px" />
+          </h1>
+          <p>
+            <Skeleton width="350px" count={5}/>
+          </p>
+        </div>
+        <div className="col-6">
+          <h1>Lorem ipsum dolor</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br />
+            sed do eiusmod tempor incididunt<br />
+            ut labore et dolore magna aliqua.<br />
+            Ut enim ad minim veniam, quis nostrud exercitation<br />
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.<br />
+          </p>
+        </div>
+      </div>
     </div>
   ));

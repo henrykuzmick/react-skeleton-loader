@@ -1,4 +1,26 @@
 .react-skeleton-load {
   line-height: 1;
   display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.react-skeleton-load.animated::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  top: 0;
+  left: -500px;
+  background-image: linear-gradient(90deg, rgba(255,255,255, 0), rgba(255,255,255, 0.6), rgba(255,255,255, 0));
+  animation: progress 1.2s ease-in-out infinite
+}
+
+@keyframes progress {
+  0% {
+    left: -500px
+  }
+  100% {
+    left: 100%
+  }
 }

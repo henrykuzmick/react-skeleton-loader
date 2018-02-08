@@ -10,7 +10,8 @@ type Props = {
   heightRandomness: number,
   borderRadius: string,
   backgroundColor: string,
-  count: number
+  count: number,
+  animated: boolean
 }
 
 const Skeleton = (props: Props) => {
@@ -26,7 +27,8 @@ const Skeleton = (props: Props) => {
     const height = `${h - (Math.random() * h * props.heightRandomness)}${hm}`;
     elements.push(
       <span
-        className="react-skeleton-load"
+        className={`react-skeleton-load ${props.animated ? 'animated' : ''}`}
+        key={i}
         style={{
           width,
           height,
@@ -56,7 +58,8 @@ Skeleton.defaultProps = {
   heightRandomness: 0,
   borderRadius: '8px',
   backgroundColor: '#EFF1F6',
-  count: 1
+  count: 1,
+  animated: true
 };
 
 export default Skeleton;
