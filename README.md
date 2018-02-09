@@ -1,6 +1,8 @@
 # React Skeleton Loader
 
 [![npm version](https://badge.fury.io/js/react-skeleton-loader.svg)](https://badge.fury.io/js/react-skeleton-loader)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/react-skeleton-loader/dist/Skeleton.min.js?compression=gzip)](https://unpkg.com/react-skeleton-loader/dist/Skeleton.min.js)
+
 React Skeleton Loader is a React component designed to help you easily integrate custom animated skeletons for loading states.
 It best works with text elements as it adopts to the fonts size and line height of your content, but it can be easily fitted to use with other objects like images and avatars.
 
