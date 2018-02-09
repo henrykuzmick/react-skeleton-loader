@@ -1,3 +1,9 @@
+# 1.0.0 (2018-02-08)
+  - Major release
+  - Add readme
+  - Add stories
+  - rename `backgroundColor` prop to `color`
+
 # 0.1.6 (2018-02-08)
   - Add animations
 
