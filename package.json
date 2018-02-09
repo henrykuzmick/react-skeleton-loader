@@ -1,7 +1,7 @@
 {
   "name": "react-skeleton-loader",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A react helper for skeleton loaders",
   "main": "dist/Skeleton.js",
   "scripts": {
     "build": "webpack",
