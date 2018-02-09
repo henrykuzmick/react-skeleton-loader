@@ -5,6 +5,7 @@
   "main": "dist/Skeleton.js",
   "scripts": {
     "build": "webpack",
+    "deploy-storybook": "storybook-to-ghpages",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "postbuild": "uglifyjs dist/Skeleton.js -c --output dist/Skeleton.min.js",
@@ -32,6 +33,7 @@
     "@storybook/addon-links": "^3.3.12",
     "@storybook/addons": "^3.3.12",
     "@storybook/react": "^3.3.12",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",

@@ -9,7 +9,7 @@ type Props = {
   widthRandomness: number,
   heightRandomness: number,
   borderRadius: string,
-  backgroundColor: string,
+  color: string,
   count: number,
   animated: boolean
 }
@@ -19,7 +19,7 @@ const Skeleton = (props: Props) => {
   const h = parseFloat(props.height);
   const wm = props.width.toString().replace(/\d+/g, '');
   const hm = props.height.toString().replace(/\d+/g, '');
-  const { borderRadius, backgroundColor } = props;
+  const { borderRadius, color } = props;
   const elements = [];
 
   for (let i = 0; i < props.count; i++) {
@@ -33,7 +33,7 @@ const Skeleton = (props: Props) => {
           width,
           height,
           borderRadius,
-          backgroundColor
+          backgroundColor: color
         }}
       >
         &zwnj;
@@ -57,7 +57,7 @@ Skeleton.defaultProps = {
   widthRandomness: 0.25,
   heightRandomness: 0,
   borderRadius: '8px',
-  backgroundColor: '#EFF1F6',
+  color: '#EFF1F6',
   count: 1,
   animated: true
 };
