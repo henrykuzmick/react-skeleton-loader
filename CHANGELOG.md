@@ -1,3 +1,6 @@
+# 1.0.2 (2018-02-09)
+  - Add description to package.json
+
 # 1.0.1 (2018-02-09)
   - Update readme
 
