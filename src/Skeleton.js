@@ -40,7 +40,7 @@ const Skeleton = (props: Props) => {
       </span>
     );
     if (i !== props.count - 1) {
-      elements.push(<br />);
+      elements.push(<br key={`br-${i}`} />);
     }
   }
 
